@@ -18,39 +18,39 @@ import {
 const cases = [
   {
     number: "01",
-    title: "From acres to acquisition",
-    subtitle: "Agriculture growth campaign",
-    category: "LEAD GENERATION",
+    title: "Al-Nada Rice Transplanting Co.",
+    subtitle: "Agriculture / AgTech · 20 days",
+    category: "LIVE CAMPAIGN",
     image: "/manus-storage/case-farm_81d1ce25.jpg",
-    result: "+184%",
-    resultLabel: "qualified leads",
-    metrics: ["2.8x ROAS", "−37% CPL", "Meta Ads"],
+    result: "EGP 4,000",
+    resultLabel: "campaign budget",
+    metrics: ["0 conversations", "0 reach", "0 impressions", "0 link clicks", "1.32 EGP cost/conversation", "3.72% link CTR", "9.26 EGP CPM", "0.14 EGP CPC"],
     description:
-      "A full-funnel Meta campaign that translated local farming demand into a predictable lead pipeline—without inflating the media budget.",
+      "Objective: brand awareness + contracts. Targeted farmers and landowners across Qalyubia, Sharqia, Kafr El-Sheikh, Dakahlia, Beheira, Gharbia, and Monufia.",
   },
   {
     number: "02",
-    title: "Style that scales",
-    subtitle: "Women's fashion performance",
-    category: "E-COMMERCE",
+    title: "SADDA — سدّي",
+    subtitle: "Fashion / E-commerce · 5 days",
+    category: "LIVE CAMPAIGN",
     image: "/manus-storage/case-fashion_e352d79a.jpg",
-    result: "+62%",
-    resultLabel: "purchase rate",
-    metrics: ["3.4x ROAS", "−28% CPA", "Instagram"],
+    result: "EGP 449.36",
+    resultLabel: "total spend",
+    metrics: ["0 conversations", "0 reach", "0 impressions", "EGP 449.36 spend", "4.63 EGP cost/conversation", "11.91% CTR", "0.22 EGP CPC", "EGP 800 budget"],
     description:
-      "A creative testing system for a Damietta fashion label, built around audience signals, offer clarity, and a ruthless weekly iteration rhythm.",
+      "Objective: direct sales. The campaign paused after two days because of a production issue, protecting customer experience and brand reputation.",
   },
   {
     number: "03",
-    title: "Less noise. More signal.",
-    subtitle: "Always-on performance system",
-    category: "OPTIMIZATION",
+    title: "Nile Residences",
+    subtitle: "Residential compound · 30 days",
+    category: "CONCEPT CAMPAIGN",
     image: "/manus-storage/case-performance_db242c43.jpg",
-    result: "−41%",
-    resultLabel: "wasted spend",
-    metrics: ["+29% CTR", "7-day tests", "Reporting"],
+    result: "EGP 6,000",
+    resultLabel: "proposed budget",
+    metrics: ["Site visits", "Qualified leads", "Meta + Google", "Lead Ads"],
     description:
-      "A practical operating system for finding the bottleneck, shifting spend with intent, and making every performance report useful for the next decision.",
+      "A proposed multi-platform strategy for site visits and qualified leads, using Meta Lead Ads, Google Search, and retargeting for Greater Cairo buyers.",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="hero-footer wrap"><span>Scroll to explore</span><span className="scroll-arrow">↓</span><span className="hero-year">PORTFOLIO / 2026</span></div>
         </section>
 
-        <section className="proof-strip" aria-label="Performance snapshot"><div className="wrap proof-grid"><div className="proof-label"><span>FIELD NOTES / 2026</span><strong>Proof, before promises.</strong></div><div><b>2.8x</b><span>highest ROAS</span></div><div><b>−41%</b><span>wasted spend</span></div><div><b>+184%</b><span>qualified leads</span></div><div className="proof-status"><i /> Systems built to learn</div></div></section>
+        <section className="proof-strip" aria-label="Verified campaign snapshot"><div className="wrap proof-grid"><div className="proof-label"><span>ORIGINAL DATA / META ADS</span><strong>Verified campaign snapshot.</strong></div><div><b>228,417</b><span>total reach</span></div><div><b>450,578</b><span>total impressions</span></div><div><b>0</b><span>conversations started</span></div><div className="proof-status"><i /> 2 live campaigns run</div></div></section>
 
         <section id="about" className="section about-section">
           <div className="wrap section-grid">
@@ -131,7 +131,7 @@ export default function Home() {
         </section>
 
         <section id="work" className="section work-section">
-          <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Results, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every case study starts with a constraint and ends with a clearer way forward.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Outcome</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
+          <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Campaigns, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every entry below uses the figures and notes from the original campaign file—nothing added.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Source data</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
         </section>
 
         <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.facebook.com" aria-label="Facebook"><Facebook size={18} /></a><a href="https://www.instagram.com" aria-label="Instagram"><Instagram size={18} /></a><a href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a></div></div></section>
