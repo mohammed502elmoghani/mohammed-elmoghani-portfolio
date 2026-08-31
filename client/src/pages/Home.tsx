@@ -12,6 +12,7 @@ import {
   Linkedin,
   Mail,
   Menu,
+  MessageCircle,
   MousePointer2,
   X,
 } from "lucide-react";
@@ -23,9 +24,9 @@ const cases = [
     subtitle: "Agriculture / AgTech · 20 days",
     category: "LIVE CAMPAIGN",
     image: "/manus-storage/case-farm_81d1ce25.jpg",
-    result: "EGP 4,000",
-    resultLabel: "campaign budget",
-    metrics: ["0 conversations", "0 reach", "0 impressions", "0 link clicks", "1.32 EGP cost/conversation", "3.72% link CTR", "9.26 EGP CPM", "0.14 EGP CPC"],
+    result: "3,054",
+    resultLabel: "conversations started",
+    metrics: ["218,062 reach", "433,756 impressions", "16,144 link clicks", "EGP 4,000 budget", "1.32 EGP cost/conversation", "3.72% link CTR", "9.26 EGP CPM", "0.14 EGP CPC"],
     description:
       "Objective: brand awareness + contracts. Targeted farmers and landowners across Qalyubia, Sharqia, Kafr El-Sheikh, Dakahlia, Beheira, Gharbia, and Monufia.",
   },
@@ -35,9 +36,9 @@ const cases = [
     subtitle: "Fashion / E-commerce · 5 days",
     category: "LIVE CAMPAIGN",
     image: "/manus-storage/case-fashion_e352d79a.jpg",
-    result: "EGP 449.36",
-    resultLabel: "total spend",
-    metrics: ["0 conversations", "0 reach", "0 impressions", "EGP 449.36 spend", "4.63 EGP cost/conversation", "11.91% CTR", "0.22 EGP CPC", "EGP 800 budget"],
+    result: "97",
+    resultLabel: "conversations started",
+    metrics: ["10,355 reach", "16,822 impressions", "EGP 449.36 spend", "4.63 EGP cost/conversation", "11.91% CTR", "0.22 EGP CPC", "EGP 800 budget"],
     description:
       "Objective: direct sales. The campaign paused after two days because of a production issue, protecting customer experience and brand reputation.",
   },
@@ -85,7 +86,7 @@ export default function Home() {
           <a href="#work" onClick={closeMenu}>Selected work</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
-        <a className="top-cta" href="mailto:hello@mohammedelmoghani.com">Let&apos;s talk <ArrowUpRight size={16} /></a>
+        <a className="whatsapp-cta" href="https://wa.me/201095637036?text=Hello%20Mohammed%2C%20I%20would%20like%20to%20discuss%20a%20campaign." target="_blank" rel="noreferrer"><MessageCircle size={16} /> WhatsApp</a><a className="top-cta" href="mailto:hello@mohammedelmoghani.com">Let&apos;s talk <ArrowUpRight size={16} /></a>
       </header>
 
       <main id="top">
@@ -103,7 +104,7 @@ export default function Home() {
           <div className="hero-footer wrap"><span>Scroll to explore</span><span className="scroll-arrow">↓</span><span className="hero-year">PORTFOLIO / 2026</span></div>
         </section>
 
-        <section className="proof-strip" aria-label="Verified campaign snapshot"><div className="wrap proof-grid"><div className="proof-label"><span>ORIGINAL DATA / META ADS</span><strong>Verified campaign snapshot.</strong></div><div><b>228,417</b><span>total reach</span></div><div><b>450,578</b><span>total impressions</span></div><div><b>0</b><span>conversations started</span></div><div className="proof-status"><i /> 2 live campaigns run</div></div></section>
+        <section className="proof-strip" aria-label="Verified campaign snapshot"><div className="wrap proof-grid"><div className="proof-label"><span>ORIGINAL DATA / META ADS</span><strong>Verified campaign snapshot.</strong></div><div><b>228,417</b><span>total reach</span></div><div><b>450,578</b><span>total impressions</span></div><div><b>3,151</b><span>conversations started</span></div><div className="proof-status"><i /> 2 live campaigns run</div></div></section>
 
         <section id="about" className="section about-section">
           <div className="wrap section-grid">
@@ -124,7 +125,7 @@ export default function Home() {
           <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Campaigns, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every entry below uses the figures and notes from the original campaign file—nothing added.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Source data</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
         </section>
 
-        <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.facebook.com" aria-label="Facebook"><Facebook size={18} /></a><a href="https://www.instagram.com" aria-label="Instagram"><Instagram size={18} /></a><a href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a></div></div></section>
+        <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="contact-actions"><a className="button button-primary" href="https://wa.me/201095637036?text=Hello%20Mohammed%2C%20I%20would%20like%20to%20discuss%20a%20campaign." target="_blank" rel="noreferrer">Contact on WhatsApp <MessageCircle size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.facebook.com" aria-label="Facebook"><Facebook size={18} /></a><a href="https://www.instagram.com" aria-label="Instagram"><Instagram size={18} /></a><a href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a></div></div></section>
       </main>
 
       <footer className="footer"><div className="wrap"><span>© 2026 Mohammed Elmoghani</span><span>Built with discipline, not noise.</span><a href="#top">Back to top ↑</a></div></footer>
