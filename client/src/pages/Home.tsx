@@ -26,7 +26,8 @@ const cases = [
     image: "/manus-storage/case-farm_81d1ce25.jpg",
     result: "3,054",
     resultLabel: "conversations started",
-    metrics: ["218,062 reach", "433,756 impressions", "16,144 link clicks", "EGP 4,000 budget", "1.32 EGP cost/conversation", "3.72% link CTR", "9.26 EGP CPM", "0.14 EGP CPC"],
+    metrics: ["Meta Ads", "20 days", "Brand awareness + contracts"],
+    kpis: [["Conversations", "3,054"], ["Link clicks", "16,144"], ["Reach", "218,062"], ["Impressions", "433,756"], ["Budget", "EGP 4,000"], ["Cost / conversation", "EGP 1.32"], ["Link CTR", "3.72%"], ["CPM", "EGP 9.26"], ["CPC", "EGP 0.14"]],
     description:
       "Objective: brand awareness + contracts. Targeted farmers and landowners across Qalyubia, Sharqia, Kafr El-Sheikh, Dakahlia, Beheira, Gharbia, and Monufia.",
   },
@@ -38,7 +39,8 @@ const cases = [
     image: "/manus-storage/case-fashion_e352d79a.jpg",
     result: "97",
     resultLabel: "conversations started",
-    metrics: ["10,355 reach", "16,822 impressions", "EGP 449.36 spend", "4.63 EGP cost/conversation", "11.91% CTR", "0.22 EGP CPC", "EGP 800 budget"],
+    metrics: ["Meta Ads", "5 days", "Direct sales"],
+    kpis: [["Conversations", "97"], ["Reach", "10,355"], ["Impressions", "16,822"], ["Total spend", "EGP 449.36"], ["Budget", "EGP 800"], ["Cost / conversation", "EGP 4.63"], ["CTR", "11.91%"], ["CPC", "EGP 0.22"]],
     description:
       "Objective: direct sales. The campaign paused after two days because of a production issue, protecting customer experience and brand reputation.",
   },
@@ -122,7 +124,7 @@ export default function Home() {
         </section>
 
         <section id="work" className="section work-section">
-          <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Campaigns, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every entry below uses the figures and notes from the original campaign file—nothing added.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Source data</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
+          <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Campaigns, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every entry below uses the figures and notes from the original campaign file—nothing added.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Source data</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-kpis">{item.kpis.map(([label, value]) => <div className="case-kpi" key={label}><span>{label}</span><strong>{value}</strong></div>)}</div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
         </section>
 
         <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="contact-actions"><a className="button button-primary" href="https://wa.me/201095637036?text=Hello%20Mohammed%2C%20I%20would%20like%20to%20discuss%20a%20campaign." target="_blank" rel="noreferrer">Contact on WhatsApp <MessageCircle size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.facebook.com" aria-label="Facebook"><Facebook size={18} /></a><a href="https://www.instagram.com" aria-label="Instagram"><Instagram size={18} /></a><a href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a></div></div></section>
