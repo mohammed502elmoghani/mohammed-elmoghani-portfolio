@@ -7,8 +7,6 @@ import {
   ChevronDown,
   CircleDot,
   Bot,
-  Facebook,
-  Instagram,
   Linkedin,
   Mail,
   Menu,
@@ -93,7 +91,7 @@ export default function Home() {
 
       <main id="top">
         <section className="hero-section">
-          <div className="hero-media"><img src="/manus-storage/portfolio-hero_ff7a8484.jpg" alt="Abstract performance signal lines" /></div>
+          <div className="hero-media"><img src="/manus-storage/mohammed-elmoghani-profile_cd329727.jpeg" alt="Mohammed Elmoghani portrait" /></div>
           <div className="hero-content wrap">
             <div className="hero-copy reveal">
               <p className="kicker"><span className="live-dot" /> Digital marketing specialist · Meta Ads</p>
@@ -127,7 +125,7 @@ export default function Home() {
           <div className="wrap"><div className="work-intro"><div className="section-index">03 <span>SELECTED WORK</span></div><div className="reveal"><p className="kicker">A few signals from the field</p><h2>Campaigns, with<br /><em>the receipts.</em></h2></div><p className="work-aside reveal">Every entry below uses the figures and notes from the original campaign file—nothing added.</p></div><div className="case-list">{cases.map((item, index) => <article className={`case-card reveal case-${index === 0 ? "featured" : "secondary"}`} key={item.number}><div className="case-image"><img src={item.image} alt={item.title} /><span>{item.number}</span></div><div className="case-content"><div className="case-meta"><span>{item.category}</span><span>Meta Ads</span></div><p className="case-subtitle">{item.subtitle}</p><h3>{item.title}</h3><p className="case-description"><span className="constraint-label">Constraint → </span>{item.description}</p><div className="case-result"><span className="result-label">Source data</span><strong>{item.result}</strong><span>{item.resultLabel}</span></div><div className="case-kpis">{item.kpis.map(([label, value]) => <div className="case-kpi" key={label}><span>{label}</span><strong>{value}</strong></div>)}</div><div className="case-tags">{item.metrics.map((metric) => <span key={metric}><Check size={13} /> {metric}</span>)}</div><a className="case-link" href="#contact">Read the approach <ArrowUpRight size={16} /></a></div></article>)}</div></div>
         </section>
 
-        <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="contact-actions"><a className="button button-primary" href="https://wa.me/201095637036?text=Hello%20Mohammed%2C%20I%20would%20like%20to%20discuss%20a%20campaign." target="_blank" rel="noreferrer">Contact on WhatsApp <MessageCircle size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.facebook.com" aria-label="Facebook"><Facebook size={18} /></a><a href="https://www.instagram.com" aria-label="Instagram"><Instagram size={18} /></a><a href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a></div></div></section>
+        <section id="contact" className="section contact-section"><div className="contact-orbit" aria-hidden="true" /><div className="wrap contact-inner"><div className="section-index">04 <span>CONTACT</span></div><div className="reveal"><p className="kicker">Have a campaign in mind?</p><h2>Let&apos;s make the<br /><em>numbers useful.</em></h2><p className="contact-copy">Tell me where growth feels stuck. I&apos;ll come back with a focused point of view and the next best move.</p><a className="button button-primary" href="mailto:hello@mohammedelmoghani.com">Start a conversation <Mail size={17} /></a></div><div className="contact-actions"><a className="button button-primary" href="https://wa.me/201095637036?text=Hello%20Mohammed%2C%20I%20would%20like%20to%20discuss%20a%20campaign." target="_blank" rel="noreferrer">Contact on WhatsApp <MessageCircle size={17} /></a></div><div className="socials reveal reveal-delay-2"><a href="https://www.linkedin.com/in/mohammed-sherif-2743a4356?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" target="_blank" rel="noreferrer"><Linkedin size={18} /></a></div></div></section>
       </main>
 
       <footer className="footer"><div className="wrap"><span>© 2026 Mohammed Elmoghani</span><span>Built with discipline, not noise.</span><a href="#top">Back to top ↑</a></div></footer>
