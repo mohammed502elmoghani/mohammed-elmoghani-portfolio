@@ -1,0 +1,49 @@
+Use this visual identity for every design created for Mohammed Elmoghani.
+
+BRAND: Mohammed Elmoghani, a Digital Marketing Specialist focused on Meta Ads. The brand turns campaign data into practical next decisions and uses AI as a controlled assistant for research, organizing insights, ad-copy directions, and reporting—not as a replacement for human strategy or final review.
+
+CORE IDEA: Digital newsroom meets performance report. The design should feel editorial, analytical, calm, precise, modern, confident, and human. Every number must feel like evidence. Every visual element must have a job.
+
+LOGO: Use the provided ME symbol as the primary brand mark. It is an abstract rising signal/wave built from the initials M and E. Keep its original proportions, orientation, and clean silhouette. Prefer Signal Mint on a dark background or Deep Charcoal on a light background. Leave a clear safe area around it. Do not stretch, rotate, redraw, add heavy shadow, add 3D, add bevel, add glow, or place it over a busy image.
+
+COLOR PALETTE:
+- Signal Mint: #63E6BE — primary accent for CTA buttons, links, key numbers, live indicators, rules, and italic emphasis.
+- Deep Charcoal: #0D1214 — primary background, hero, footer, and dark surfaces.
+- Editorial Panel: #131A1C — cards, sections, modals, and content panels.
+- Panel Lift: #182123 — KPI cells and raised data areas.
+- Warm Ivory: #F3EFE6 — main headings and important text.
+- Field Muted: #9DA8A5 — secondary text, descriptions, and metadata.
+- Mint Deep: #2B6656 — quiet borders, dividers, and supporting accents.
+- Measured Rust: #B97457 — rare warning/detail accent only.
+Use charcoal and panel colors for 70–80% of the composition, ivory for hierarchy, muted gray for supporting copy, and mint sparingly as a signal. Never use purple gradients, rainbow gradients, neon cyberpunk glow, or random accent colors.
+
+TYPOGRAPHY:
+- Headlines: DM Serif Display, regular weight, large scale, tight line-height, occasional italic words in Signal Mint.
+- Interface/body: Manrope, clean and highly readable.
+- Data/labels: IBM Plex Mono, uppercase or spaced labels, campaign metrics, dates, section numbers, and status metadata.
+- Arabic fallback: IBM Plex Sans Arabic or Noto Sans Arabic for Arabic copy while keeping IBM Plex Mono for numbers.
+Do not use Inter as the main typeface.
+
+LAYOUT: Use an asymmetric editorial composition rather than a generic centered grid. Build a small column for section numbers and labels, a dominant content column, and an optional side column for notes or status information. Use thin rules, generous whitespace, and a continuous report spine across sections. Show section labels such as 01 / ABOUT, 02 / EXPERTISE, 03 / SELECTED WORK, 04 / CONTACT.
+
+HERO: Use a dark full-width hero with Mohammed’s portrait on the right and a charcoal gradient overlay that guarantees text contrast. Place the large editorial headline on the left. Use a small mint mono kicker, a short practical description, one mint primary CTA, one underlined secondary link, and a compact side note with location/status.
+
+CASE STUDIES: Treat campaigns as evidence dossiers, not generic portfolio cards. Show a prominent result number, then a readable KPI grid directly below the campaign. Use labels such as The challenge, Objective, Audience, Campaign setup, Creative, Results, What the numbers tell us, Key takeaway, and Next decision. Use the exact supplied campaign data only. Never invent metrics, reviews, testimonials, or outcomes. On mobile, keep the campaign image short and show the KPI data immediately below it without horizontal scrolling.
+
+IMAGES: Use realistic editorial photography with controlled contrast, low-to-medium saturation, side lighting, dark negative space, and clear subject framing. Mohammed’s portrait should feel professional, direct, and trustworthy. Campaign images should be context-specific: agricultural fields for agriculture, product/material details for fashion, and real evidence where available. Use dark overlays behind text on images. Avoid generic corporate stock photos, overly bright visuals, crowded backgrounds, and decorative images unrelated to the case.
+
+COMPONENT STYLE:
+- Primary CTA: Signal Mint background, Deep Charcoal text, near-sharp corners, ArrowUpRight or MessageCircle icon.
+- Secondary link: Warm Ivory text with a thin Signal Mint underline.
+- WhatsApp CTA: Signal Mint button with MessageCircle icon and the label Contact on WhatsApp.
+- Data card: Editorial Panel background, thin border, mono label, mint metric value.
+- Modal: dark panel with mint labels, large serif heading, readable paragraphs, KPI grid, chips, internal scroll, and a clear close button.
+- Navigation: fixed, dark translucent background, subtle blur, compact mono links, WhatsApp action visible.
+
+MOTION: Keep motion calm and fast. Use 160–280ms transitions with cubic-bezier(.23,1,.32,1). Use small vertical reveal animations, subtle card lift on hover, and slight button compression on active. Modals should fade and scale from .98 to 1. Respect prefers-reduced-motion. Never use constant distracting motion or exaggerated parallax.
+
+VOICE: Direct, measured, and practical. Speak about problems, decisions, evidence, and next moves. Avoid hype. Good examples: “Campaigns built for the next decision.” “I use AI to move faster through research and iterations—then I make the call.” “Every number should lead to a better next move.” Avoid generic filler, absolute promises, fake testimonials, and claims without evidence.
+
+RESPONSIVE BEHAVIOR: On mobile, collapse navigation into a menu icon, keep WhatsApp as the primary contact action, preserve face visibility in the hero image, reduce image heights, stack or use two-column KPI cells, and ensure every number remains readable. Avoid fixed-height containers that push campaign data far below the image.
+
+QUALITY TEST: Before finalizing, verify contrast, logo proportions, font hierarchy, mobile readability, button states, data accuracy, and that every decorative detail reinforces clarity and trust rather than adding noise.
